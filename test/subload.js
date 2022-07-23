@@ -1,9 +1,20 @@
-const navSlide = () => {
+document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.querySelector('.button'),
+        loader = document.querySelector('.loader'),
+        check = document.querySelector('.check');
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+    
+    btn.addEventListener('click', function () {
+      loader.classList.add('active');    
+    });
+   
+    loader.addEventListener('animationend', function() {
+      check.classList.add('active'); 
+    });
 
-burger.addEventListener('click', () => {
+    burger.addEventListener('click', () => {
 
         nav.classList.toggle('nav-active');
         
@@ -22,8 +33,5 @@ burger.addEventListener('click', () => {
         burger.classList.toggle('toggle');
 
     });
+  });
 
-    
-}
-
-navSlide();

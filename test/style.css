@@ -5,11 +5,12 @@
 	box-sizing: border-box;
 }
 body{
-    background-color: #F2eee3;
-    
+    background-color: rgba(1.0000000591389835, 24.000000469386578, 38.0000015348196, 1);
+    font-family: lato;
 }
 .hire-me{
     min-height: 100vh;
+	
 }
 .container{
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -55,9 +56,7 @@ box3{
     border: 2px solid blue;
     height:20px;
 }
-span{
-    border:1px solid blue;
-}
+
 .input{
     
     border:2px solid blue;
@@ -106,8 +105,8 @@ nav{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 8vh;
-	background-color:rgba(63.000000044703484, 97.00000181794167, 140.00000685453415, 1);
+	min-height: 15vh;
+	/*background-color:rgba(63.000000044703484, 97.00000181794167, 140.00000685453415, 1);*/
 	font-family: Roboto;
 	color: white;
 
@@ -131,6 +130,8 @@ nav{
 	letter-spacing: 3px;
 	font-weight: bold;
 	font-size: 14px;
+	transition: 0.5s;
+	text-transform: uppercase;
 }
 
 .nav-links li{
@@ -151,7 +152,7 @@ nav{
 
 @media screen and (max-width:1024px){
 	.nav-links{
-		width:40%;
+		width:50%;
 	}
 
 
@@ -167,7 +168,7 @@ nav{
 	
 	height: 92vh;
 	top:8vh;
-	background-color: rgba(63.000000044703484, 97.00000181794167, 140.00000685453415, 1);
+	background-color:rgba(1, 24, 38, 0.483);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -180,6 +181,15 @@ nav{
 	.burger{
 		display: block;
 		
+	}
+	.container{
+		padding:10%;
+	}
+	.col-25{
+		width: 25%;
+	}
+	.col-75{
+		width:75%;
 	}
 }
 .nav-active{
@@ -212,4 +222,130 @@ nav{
 .toggle .line3{
 	transform: rotate(45deg) translate(-5px,-5px);
 }
+.toggle .line4{
+	opacity:0;
 
+}
+
+
+.nav-links a::after {
+	position: absolute;
+	content: "";
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #3498db;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s;
+  }
+a:hover {
+	color: #95a5a6;
+  }
+
+a:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
+  }
+
+  .button { 
+	color:rgba(255, 255, 255, 1);
+	
+	font-family:Roboto;
+	text-align:center;
+	font-size:14px;
+	letter-spacing:0;
+	border-color: white;
+    text-transform: uppercase;
+	height:40px;
+	box-shadow:0px 4px 18px rgba(140.00000685453415, 38.0000015348196, 86.00000247359276, 0.3499999940395355);
+    border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+    background-color:rgba(140.00000685453415, 38.0000015348196, 86.00000247359276, 1);
+}
+button:hover {
+    background-color: transparent;
+    border-color: rgba(140.00000685453415, 38.0000015348196, 86.00000247359276, 1);
+    transition: all .1s ease-in-out;
+	color:rgba(140.00000685453415, 38.0000015348196, 86.00000247359276, 1); ;
+  }
+
+.message{
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 1px;
+}
+
+
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	background: transparent; 
+	margin: 30px auto 0 auto;
+	border: solid 2px #424242;
+	border-top: solid 2px #1c89ff;
+	border-radius: 50%;
+	opacity: 0;
+  }
+  
+  .check {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: translate3d(-4px,50px,0);
+	opacity: 0;
+  }
+	.check span:nth-child(1) {
+	  display: block;
+	  width: 10px;
+	  height: 2px;
+	  background-color: rgba(140.00000685453415, 38.0000015348196, 86.00000247359276, 1);
+	  transform: rotate(45deg);
+	}
+	.check span:nth-child(2) {
+	  display: block;
+	  width: 20px;
+	  height: 2px;
+	  background-color: rgba(140.00000685453415, 38.0000015348196, 86.00000247359276, 1);
+	  transform: rotate(-45deg) translate3d(14px, -4px, 0);
+	  transform-origin: 100%;
+	}
+  
+  
+  .loader.active {
+	animation: loading 2s ease-in-out; 
+	animation-fill-mode: forwards;
+  }
+  
+  .check.active {
+	opacity: 1;
+	transform: translate3d(-4px,4px,0);
+	transition: all .5s cubic-bezier(.49, 1.74, .38, 1.74);
+	transition-delay: .2s;
+  }
+  
+  @keyframes loading {
+	30% {
+	  opacity:1; 
+	}
+	
+	85% {
+	  opacity:1;
+	  transform: rotate(1080deg);
+	  border-color: #262626;
+	}
+	100% {
+	  opacity:1;
+	  transform: rotate(1080deg);
+	   border-color: rgba(140.00000685453415, 38.0000015348196, 86.00000247359276, 1);
+	}
+  }
