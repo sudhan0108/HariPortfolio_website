@@ -1,0 +1,139 @@
+
+  
+  *{
+	margin: 0;
+	padding:5px;
+	box-sizing: border-box;
+  }
+
+  .heading{ 
+
+	top: 150px;
+}  
+.email_button { 
+	width:50%;
+	height:82px;
+  background-color:rgba(1.0000000591389835, 35.00000171363354, 64.00000378489494, 1);
+ 
+  padding:20px;
+  margin:auto;  
+}
+
+.email_text { 
+	color:rgba(255, 255, 255, 1);
+	font-family:Roboto Condensed;
+	text-align:center;
+	font-size:32px;
+	letter-spacing:0;
+}
+.em_icon { 
+	  width: 32px;
+    height: 32px; 
+    background-image: url(../images/google.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page_4 { 
+	width:auto;
+	margin: auto;
+  display: flex;
+  gap:60px;
+  flex-direction: column;
+  font-family:Roboto Condensed;
+  text-align: center;
+}
+.Contact_box { 
+  margin-top:30px;
+	color:rgba(255, 255, 255, 1);
+	font-family:Roboto Condensed;
+	top:360px;
+	font-size:60px;
+	letter-spacing:0;
+}
+
+
+.tray { 
+  color:white;
+	width:100%;
+	font-family:Roboto Condensed;
+  display: block;
+  
+
+  
+  margin: auto;
+}
+.tray_icon1{
+  background-image: url(../images/facebook.png);
+  width: 50px;
+  height:50px;
+  padding:10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.tray_icon1:hover{
+  background-color: rgba(63, 137, 234,1);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.tray_icon2{
+  background-image: url(../images/instagram.png);
+  width: 50px;
+  height:50px;
+  padding:10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.tray_icon2:hover{
+  background-color:  rgba(230, 130, 80,1);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.tray_icon3{
+  background-image: url(../images/twitter.png);
+  width: 50px;
+  height:50px;
+  padding:10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.tray_icon3:hover{
+  background-color:rgba(77, 159,235,1);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.tray_icon4{
+  background-image: url(../images/linkedin.png);
+  width: 50px;
+  height:50px;
+  padding:10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.tray_icon4:hover{
+  background-color: rgba(44,96,184,1);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+a{
+  
+  padding: 10px;
+  color:white;
+}
+
+.icon_text{
+  padding:20px;
+  
+}
