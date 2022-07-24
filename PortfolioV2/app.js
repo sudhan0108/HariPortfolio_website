@@ -10,11 +10,11 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 7000,
+  duration: 5000,
   triggerElement: intro,
   triggerHook: 0
 })
-  
+  /*.addIndicators()*/
   .setPin(intro)
   .addTo(controller);
 
