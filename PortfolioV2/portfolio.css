@@ -8,7 +8,7 @@
 
   .heading{ 
 
-	top: 150px;
+	top: 160px;
 }  
 .email_button { 
 	width:50%;
@@ -27,11 +27,15 @@
 	letter-spacing:0;
 }
 .em_icon { 
-	  width: 32px;
-    height: 32px; 
+	  width: 30px;
+    height: 30px; 
+    position: absolute;
     background-image: url(../images/google.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: auto;
+    margin-top: 5px;
+    object-fit: cover;
 }
 .page_4 { 
 	width:auto;
@@ -77,10 +81,11 @@
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  transition: 0.5s ease-in-out;
 }
 .tray_icon2{
   background-image: url(../images/instagram.png);
-  width: 50px;
+  width:50px;
   height:50px;
   padding:10px;
   background-repeat: no-repeat;
@@ -89,14 +94,15 @@
 }
 .tray_icon2:hover{
   background-color:  rgba(230, 130, 80,1);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition: 0.5s ease-in;
 }
 .tray_icon3{
   background-image: url(../images/twitter.png);
-  width: 50px;
+  width: 60px;
   height:50px;
   padding:10px;
   background-repeat: no-repeat;
@@ -105,10 +111,8 @@
 }
 .tray_icon3:hover{
   background-color:rgba(77, 159,235,1);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border:65px;
+  transition: 0.5s ease-in-out;
 }
 .tray_icon4{
   background-image: url(../images/linkedin.png);
@@ -121,12 +125,23 @@
 }
 .tray_icon4:hover{
   background-color: rgba(44,96,184,1);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
+  
+  border-top: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 10px;
+  border-top-right-radius: 10px;
+  border-left: 30px;
+  border-bottom-right-radius: 10px;
+  border-right: 30px;
+  border-bottom-left-radius: 10px;
+  transition: 0.5s ease-in;
 
+}
+.log{
+   width:50px;
+   height:50p;
+   padding:1px 20px;
+}
 a{
   
   padding: 10px;
@@ -136,4 +151,8 @@ a{
 .icon_text{
   padding:20px;
   
+}
+
+.email_button:hover{
+
 }
