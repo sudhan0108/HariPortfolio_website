@@ -143,3 +143,69 @@ nav{
 	transform-origin: right;
 	transition: transform 0.5s;
   }
+
+  .nav-links a{
+	background-image: linear-gradient(
+	  to right,
+	  #54b3d6,
+	  #54b3d6 50%,
+	  #000 50%
+	);
+  }
+
+  .nav-links a {
+	background-image: linear-gradient(
+	  to right,
+	  #54b3d6,
+	  #54b3d6 50%,
+	  #000 50%
+	);
+	background-size: 200% 100%;
+	background-position: -100%;
+  }
+
+  .nav-links a {
+	background-image: linear-gradient(
+	  to right,
+	  #54b3d6,
+	  #54b3d6 50%,
+	  #000 50%
+	);
+	background-size: 200% 100%;
+	background-position: -100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+
+  .nav-links a:before {
+	content: '';
+	background: #54b3d6;
+	display: block;
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 0;
+	height: 3px;
+  }
+
+  .nav-links a:hover {
+	background-position: 0;
+   }
+
+   .nav-links a:hover::before {
+	width: 100%;
+  }
+
+  .nav-links a {
+	background-image: linear-gradient(
+	  to right,
+	  #54b3d6,
+	  #54b3d6 50%,
+	  #000 50%
+	);
+	background-size: 200% 100%;
+	background-position: -100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 0.3s ease-in-out;
+  }

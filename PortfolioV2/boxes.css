@@ -143,9 +143,11 @@ h2 {
     color: inherit;
 }
 .timeline-heading h4 {
+    text-transform: uppercase;
     font-weight: 400;
     padding: 0 15px;
-    color:rgba(255, 255, 255, 1);
+    letter-spacing: 2px;
+    
 }
 .timeline-body > p, .timeline-body > ul {
     font-size:20px;
@@ -162,6 +164,7 @@ h2 {
     font-size:20px;
     cursor: pointer;
     text-decoration: none;
+    color: rgba(140, 38, 86, 1);
 }
 .timeline > li.timeline-inverted {
     float: right;
@@ -204,7 +207,20 @@ h2 {
     }
     ul.timeline > li > .timeline-panel {
         float: right;
+        height:125px;
+       
+        flex-wrap: wrap;
     }
+    .timeline-heading h4 {
+        font-size: 22px;
+    }
+    .timeline-body > p, .timeline-body > ul{
+        font-size:18px;
+    }
+    .timeline-footer{
+        font-size: 12px;
+    }
+
     ul.timeline > li > .timeline-panel:before {
         border-left-width: 0;
         border-right-width: 15px;
@@ -234,6 +250,10 @@ section {
 	position:absolute;
 	background-color:rgba(0, 25, 41, 1) ;
     
+  }
+
+  .text-right{
+    color:rgba(242,5,68,0.5);
   }
 
  /* .page_4 { 

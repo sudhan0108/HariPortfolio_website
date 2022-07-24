@@ -11,7 +11,7 @@ nav{
 	min-height: 15vh;
 	/*background-color:rgba(63.000000044703484, 97.00000181794167, 140.00000685453415, 1);*/
 	font-family: Roboto Condensed;
-	color: white;
+	color: rgba(140,38,86,1);
 
 }
 .logo{
@@ -28,12 +28,8 @@ nav{
 }
 
 .nav-links a{
-	color: white;
-	text-decoration: none;
-	letter-spacing: 3px;
-	font-weight: bold;
-	font-size: 14px;
-	transition: 0.5s;
+	color: rgba(140,38,86,1);
+	
 	text-transform: uppercase;
 }
 
@@ -139,4 +135,37 @@ nav{
 	transform: scaleX(0);
 	transform-origin: right;
 	transition: transform 0.5s;
+  }
+
+  .nav-links a:before {
+	content: '';
+	background: #54b3d6;
+	display: block;
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 0;
+	height: 3px;
+  }
+
+  .nav-links a:hover {
+	background-position: 0;
+   }
+
+   .nav-links a:hover::before {
+	width: 100%;
+  }
+
+  .nav-links a {
+	background-image: linear-gradient(
+	  to right,
+	  #54b3d6,
+	  #54b3d6 50%,
+	  rgba(140,38,86,1) 50%
+	);
+	background-size: 200% 100%;
+	background-position: -100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 0.3s ease-in-out;
   }

@@ -14,7 +14,6 @@
 	width:50%;
 	height:82px;
   background-color:rgba(1.0000000591389835, 35.00000171363354, 64.00000378489494, 1);
- 
   padding:20px;
   margin:auto;  
 }
@@ -155,4 +154,8 @@ a{
 
 .email_button:hover{
 
+}
+
+ul{
+  gap:50px;
 }
