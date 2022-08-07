@@ -30,7 +30,9 @@
 	}
 }
 */
-
+button{
+    border: none;
+}
 header{
     --text: 
 }
