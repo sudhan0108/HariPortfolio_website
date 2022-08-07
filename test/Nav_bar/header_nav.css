@@ -1,10 +1,22 @@
+
+:root {
+--black: #000000ff;
+--smoky-black: #111111ff;
+--eerie-black: #232323ff;
+--jet: #343434ff;
+--onyx: #464646ff;
+--davys-grey: #575757ff;
+--dim-gray: #696969ff;
+--sonic-silver: #7a7a7aff;
+}
+
 *{
     margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 body{
-    background-color: rgba(1.0000000591389835, 24.000000469386578, 38.0000015348196, 1);
+    background-color: var(--black);
     font-family: lato;
 }
 .hire-me{
@@ -19,11 +31,11 @@ nav{
 	min-height: 15vh;
 	/*background-color:rgba(63.000000044703484, 97.00000181794167, 140.00000685453415, 1);*/
 	font-family: Roboto;
-	color: white;
+	color: var(--palatinate-purple);
 
 }
 .logo{
-	color: white;
+	color: var(--sonic-silver);
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 22px;
@@ -36,7 +48,7 @@ nav{
 }
 
 .nav-links a{
-	color: white;
+	color: var(--sonic-silver);
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
@@ -56,7 +68,7 @@ nav{
 .burger div{
 	width: 25px;
 	height: 2px;
-	background-color: white;
+	background-color: var(--sonic-silver);
 	margin: 5px;
     transition: all 0.3s ease;
 }
@@ -79,7 +91,7 @@ nav{
 	
 	height: 92vh;
 	top:8vh;
-	background-color:rgba(1, 24, 38, 0.483);
+	background-color:var(--eerie-black);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -143,40 +155,6 @@ nav{
 	transform-origin: right;
 	transition: transform 0.5s;
   }
-
-  .nav-links a{
-	background-image: linear-gradient(
-	  to right,
-	  #54b3d6,
-	  #54b3d6 50%,
-	  #000 50%
-	);
-  }
-
-  .nav-links a {
-	background-image: linear-gradient(
-	  to right,
-	  #54b3d6,
-	  #54b3d6 50%,
-	  #000 50%
-	);
-	background-size: 200% 100%;
-	background-position: -100%;
-  }
-
-  .nav-links a {
-	background-image: linear-gradient(
-	  to right,
-	  #54b3d6,
-	  #54b3d6 50%,
-	  #000 50%
-	);
-	background-size: 200% 100%;
-	background-position: -100%;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  }
-
   .nav-links a:before {
 	content: '';
 	background: #54b3d6;
@@ -201,7 +179,7 @@ nav{
 	  to right,
 	  #54b3d6,
 	  #54b3d6 50%,
-	  #000 50%
+	  var(--sonic-silver) 50%
 	);
 	background-size: 200% 100%;
 	background-position: -100%;

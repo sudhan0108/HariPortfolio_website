@@ -1,0 +1,56 @@
+@media screen and (max-width:1270){
+   
+    .intro{
+        width:90%;
+        height:45vh;
+    }
+
+    .intro > .greetings
+    {
+        font-size: 48px;
+    }
+    .intro > .name
+    {
+        font-size: 48px;
+    }
+    .photo img {
+        align-self: center;
+        border-radius: 250px;
+        width: 260px;
+        height:260px;
+    }
+    .nav_bar > .container 
+    {
+        opacity: 0;
+    }
+    .about_page{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    .about_section,
+    .about_page p{
+        width:100%;
+        justify-content: flex-end;
+    }
+    .photo_container img{
+
+        width:330px;
+        height:300px;
+
+    }
+
+
+    .about_page h4{
+        padding-top:0;
+
+    }
+
+    .resume_tray > .resume_tray_bg{
+        width:400px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:5px;
+    }
+}

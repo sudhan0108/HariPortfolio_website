@@ -1,0 +1,119 @@
+@media screen and (max-width:600px){
+    .landing_page{
+        flex-direction: column;
+        gap:0;
+        top:120px;
+        align-items: center;
+    }
+    .intro{
+        width:80%;
+        height:45vh;
+    }
+
+    .intro > .greetings
+    {
+        font-size: 48px;
+    }
+    .intro > .name
+    {
+        font-size: 48px;
+    }
+    .photo img {
+        align-self: center;
+        border-radius: 250px;
+        width: 260px;
+        height:260px;
+    }
+    .nav_bar > .container 
+    {
+        opacity: 0;
+    }
+    .about_page{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 80%;
+    }
+    .about_section,
+    .about_page p{
+        width:100%;
+        justify-content: flex-end;
+    }
+    .photo_container img{
+
+        width:330px;
+        height:300px;
+
+    }
+    .button_tray
+    {
+        flex-direction: column;
+        gap:20px;
+    }
+
+
+    .about_page h4{
+        padding-top:0;
+
+    }
+
+    .resume_tray > .resume_tray_bg{
+        width:80vw;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:5px;
+    }
+    .main-nav{
+        position: absolute;
+        
+        height: 92vh;
+        top:8vh;
+        background-color:var(--eerie-black);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        opacity: 0;
+        }
+        
+        .burger{
+            display: block;
+            
+        }
+
+    .contact_page{
+        align-items: center;
+        justify-content:center;
+        gap:20px;
+    }
+    .contact_social_tray{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 15px;
+    }
+
+    .contact_page > h1 {
+        font-size: 36px;
+        letter-spacing: 5;
+        width:100%;
+    }
+    .project_scroller{
+        gap:50px;
+        width: 80vw;
+        padding: 0;
+        grid-auto-columns: 60%;
+    }
+    .Project_page_cards{
+        margin:auto;
+    }
+    .snaps-inline{
+        scroll-snap-type: inline mandatory;
+        scroll-padding-inline: 100%;
+    }
+    
+    .snaps-inline >*{
+        scroll-snap-align: start;
+    }
+}
