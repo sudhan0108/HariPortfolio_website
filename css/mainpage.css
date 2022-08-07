@@ -343,13 +343,13 @@ body{
     
 }
 #project3{
-    background-image: url(../Images/card_BG.jpg);
+    background-image: url(../images/card_BG.jpg);
 }
 #project2,#project4,#project6{
-    background-image: url(../Images/card2_BG.jpg);
+    background-image: url(../images/card2_BG.jpg);
 }
 #project1,#project5,#project7{
-    background-image: url(../Images/card3_BG.jpg);
+    background-image: url(../images/card3_BG.jpg);
 }
 
 .projects_page > h1 {

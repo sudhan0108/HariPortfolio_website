@@ -1,4 +1,12 @@
 @media screen and (max-width:600px){
+
+.card-title::after {
+    width: calc(50% + 3*var(--padding))
+
+}
+}
+
+@media screen and (max-width:600px){
     .landing_page{
         flex-direction: column;
         gap:0;
@@ -117,4 +125,5 @@
     .snaps-inline >*{
         scroll-snap-align: start;
     }
+    
 }
