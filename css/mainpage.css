@@ -369,6 +369,7 @@ body{
 }
 .project_scroller{
     display: grid;
+    width: 100vw;
     grid-auto-flow: column;
     grid-auto-columns: 25%;
     gap:15px;
@@ -379,7 +380,7 @@ body{
 
 .snaps-inline{
     scroll-snap-type: inline mandatory;
-    scroll-padding-inline: 100%;
+  /*  scroll-padding-inline: 100%;*/
 }
 
 .snaps-inline >*{
