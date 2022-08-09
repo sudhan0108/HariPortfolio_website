@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     
     const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
+    const nav = document.querySelector('.nav__list');
+    const navLinks = document.querySelectorAll('.nav__list li');
  
 
     burger.addEventListener('click', () => {
