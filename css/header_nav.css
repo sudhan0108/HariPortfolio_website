@@ -70,7 +70,13 @@ nav{
 
 
 }
-
+@media screen and (max-width:600px){
+	header{
+	  justify-content: end;
+	}
+   
+  
+  }
 
 @media screen and (max-width:768px){
 	body{
@@ -95,9 +101,9 @@ nav{
 		display: block;
 		
 	}
-	header{
+	/*header{
 		justify-content: space-between;
-	}
+	}*/
 	
 	
 }

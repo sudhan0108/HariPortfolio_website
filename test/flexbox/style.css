@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*body{
+    height: 100vh;
+    background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+}*/
+.searchbox {
+    width: 300px;
+    background-color: aquamarine;
+    flex-grow: 1;
+}
+
+.searchicon {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: blue;
+}
+/*.photo-frame{
+    top:0;
+    position: absolute;
+}*/
+.photo-frame {
+    background: rgba(0, 0, 0, 0.8);
+
+    backdrop-filter: blur(10px);
+}
+
+/* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .photo-frame-active {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+  }*/
+.photo-frame {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    /* background-color: black;*/
+    position: absolute;
+    top: 15vh;
+    left: 5%;
+}
+
+.photo-frame img{
+    border: none;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.4px);
+
+}

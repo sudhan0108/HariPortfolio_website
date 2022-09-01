@@ -1,4 +1,11 @@
-
+@media screen and (max-height:1100px){
+    .landing_page{
+        flex-direction: column;
+        gap:0;
+        top:120px;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width:1270){
    
